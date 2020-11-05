@@ -1,0 +1,82 @@
+*{
+    padding: 0px;
+    margin:0px ;
+}
+
+body{
+    height: 100vh;
+}
+
+
+nav{
+    height: auto;
+    background-color: rgb(17, 15, 15);
+    }
+    
+    nav ul{
+    padding:8px;
+    }
+    
+    nav ul li{
+    list-style:none;
+    }
+    
+    nav ul li a{
+        color:skyblue;
+        text-decoration: none;
+        font-weight: 900;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    a:hover{
+        color:red;
+    }
+    
+.container{
+    min-height: 100vh;
+    margin-bottom: 24px;
+    background-color: #999;
+}
+
+.intro{
+    position: relative;
+    height: 450px;
+     width:100%;
+     display:flex;
+     justify-content: center;
+     color:red;
+     transition: transform 2s;
+     transform-style: preserve-3d;
+}
+
+.intro::before {
+    background-image:url("aluminium1.jpg");
+    background-size:cover;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    position: absolute;
+    opacity: 0.3;
+    content:"";
+}
+
+
+.brief{
+    line-height: 30px;
+position:relative;
+margin-top: 50px;
+min-height:200px;
+width: 400px;
+background-color: rgba(0,0,0,0.5);
+color:white;
+padding-top:9px;
+padding-left: 7px;
+}
+
+
+footer{
+    margin-top: -24px;
+    height: 24px;
+    background-color: aqua;
+}

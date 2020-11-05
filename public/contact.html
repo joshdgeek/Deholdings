@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deholdings info</title>
+    <script>
+        let text = document.querySelector("#text").value;
+        if(text===" "){
+            alert ("please, fill in the textbox for your message")
+         }
+      </script>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    
+    <h1>DEHOLDINGS</h1>
+
+    <nav>  <!-- nav bar-->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="images.html">Images sample</a></li>
+        <li><a href="/contact">Contact me</a></li>
+      </ul>
+    </nav>
+               
+    <h1 align="center" style="font-family: Arial, Helvetica, sans-serif;background-color:rgba(118, 200, 238, 0.822) ;">
+      Contact/Address
+    </h1>     <!--contact space-->
+    <div class="container">
+     
+
+      <div class="form">
+        <h2 id="sign" style="font-weight:900px;font-family: Arial, Helvetica, sans-serif;"><b> Contact Us</b></h2>
+        <div style="margin: 10px;"><b style="color:rgb(116, 114, 114)"> Please fill in this form to contact us!!</b> </div>
+        <hr>
+
+        <form  method="POST" action="/formsubmit">
+
+           <label  for="fieldName" class="label"><b> Name:</b></label>
+          <input type="text" name="email" required/><br>
+
+          <label for="fieldPassword"><b style="margin-left: 4px;">Email:</b></label>
+          <input type="password" name="password" style="margin-left:12px;" required> <br>
+
+          <label for=""><b>TEXT:</b> </label><br>
+          
+          <textarea name="text" id="text" cols="30" rows="10" required>
+
+          </textarea> <br>
+
+          <div style="margin-bottom: 8px;">
+            <b>Don't want to email, you could call this numbers : <b style="color:blue;"> 08169669315, 08056516650 </b> </b>
+          </div>
+
+          <button>
+           <b style="color:white;"> submit</b>
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    
+   
+
+
+</body>
+</html>
