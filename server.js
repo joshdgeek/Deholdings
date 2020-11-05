@@ -21,8 +21,8 @@ app.post("/formsubmit",function(req,res){
  let transport = nodemailer.createTransport({
         service:"gmail",
         auth:{
-            user:"mhiztaaustin@gmail.com",
-            pass:"mhiztaaustin."
+            user:process.env.EMAIL,
+            pass:process.env.PASSWORD
         },
         tls:{
             rejectUnauthorized:false
@@ -30,8 +30,8 @@ app.post("/formsubmit",function(req,res){
     })
 
     let mailOption = {
-        from:"mhiztaaustin@gmail.com",
-        to:"echejoshua100@gmail.com",
+        from:process.env.EMAIL,
+        to:process.env.RECIEVING_EMAIL,
         subject:"REQUEST OF DEHOLDINGS SERVICES",
         text: req.body.text
     }
